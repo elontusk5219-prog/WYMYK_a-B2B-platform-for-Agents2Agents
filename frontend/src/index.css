@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @apply font-body text-gray-200 antialiased;
+  background: #0c0e12;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* 细线分割与焦点 */
+a:focus-visible,
+button:focus-visible {
+  @apply outline-none ring-2 ring-a2a-accent ring-offset-2 ring-offset-a2a-bg;
+}
